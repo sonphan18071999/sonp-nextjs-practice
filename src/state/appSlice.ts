@@ -30,25 +30,27 @@ export const fetchStudents = createAsyncThunk<Student[]>(
     }
 );
 
-export const fetchCourses = createAsyncThunk<Course>(
-    'abc',
+export const fetchCourses = createAsyncThunk<Course[]>(
+    'courses/fetchCourses',
     async () => {
         const response = await axios.get(`${process.env.API_FAKE_SERVER}/courses`);
         return response.data;
     }
 )
 
+const appReducers = {
+    selectStudent(state: typeof initialState, action: PayloadAction<Student>):void {
+        state.selectedStudent = action.payload;
+    },
+    resetSelectedStudent(state: typeof initialState):void {
+        state.selectedStudent = null;
+    }
+};
+
 const appSlice = createSlice({
     name: 'appState',
     initialState,
-    reducers: {
-        selectStudent(state, action: PayloadAction<Student>) {
-            state.selectedStudent = action.payload;
-        },
-        resetSelectedStudent(state) {
-            state.selectedStudent = null;
-        }
-    },
+    reducers: appReducers,
     extraReducers: (builder) => {
         builder
             .addCase(fetchStudents.pending, (state) => {
@@ -65,14 +67,15 @@ const appSlice = createSlice({
             .addCase(fetchCourses.pending, (state, action) => {
                 state.status = 'loading';
             })
-            .addCase(fetchCourses.rejected, (state, action) => {
-                state.status = 'failed';
-                state.error = action.error.message ?? 'Failed to load students';
-            })
             .addCase(fetchCourses.fulfilled, (state, action: PayloadAction<Course[]>) => {
                 state.status = 'succeeded';
                 state.courses = action.payload;
             })
+            .addCase(fetchCourses.rejected, (state, action) => {
+                state.status = 'failed';
+                state.error = action.error.message ?? 'Failed to load students';
+            })
+
     },
 });
 
