@@ -1,9 +1,9 @@
 "use client"
-import {useRole} from "@/app/contexts/RoleContext";
-import {Features, Roles} from "@/app/models/permission";
+import {useRole} from "@/contexts/RoleContext";
+import {Features, Roles} from "@/models/permission";
 import React from "react";
-import BasicClientForm from "@/app/components/basic-client-form";
-import BasicSystemForm from "@/app/components/basic-system-form";
+import BasicClientForm from "@/components/basic-client-form";
+import BasicSystemForm from "@/components/basic-system-form";
 
 const SampleForm = () => {
     const {setRole} = useRole();

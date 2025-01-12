@@ -1,5 +1,5 @@
-import {Features} from "@/app/models/permission";
-import FeatureAccess from "@/app/components/FeatureAccess";
+import {Features} from "@/models/permission";
+import FeatureAccess from "@/components/FeatureAccess";
 import React from "react";
 
 const FormMange = ()=>{

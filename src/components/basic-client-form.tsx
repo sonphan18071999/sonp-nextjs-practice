@@ -1,8 +1,8 @@
 import {useEffect, useState} from 'react';
-import {useRole} from "@/app/contexts/RoleContext";
-import {hasDownloadRight, hasReadOnlyRight} from "@/app/ultilies/permissionUtils";
-import FeatureAccess from "@/app/components/FeatureAccess";
-import {Features} from "@/app/models/permission";
+import {useRole} from "@/contexts/RoleContext";
+import {hasDownloadRight, hasReadOnlyRight} from "@/ultilies/permissionUtils";
+import FeatureAccess from "@/components/FeatureAccess";
+import {Features} from "@/models/permission";
 
 const BasicClientForm = () => {
     const {role} = useRole();

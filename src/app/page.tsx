@@ -4,11 +4,13 @@ import styles from "./page.module.css";
 import React, {useEffect} from "react";
 import {Controller, SubmitHandler, useForm} from "react-hook-form";
 import {Box, Button, MenuItem, TextField} from "@mui/material";
+import {Provider} from "react-redux";
+import { store } from "@/state/store";
 
 const WorkerComponent = () => {
     useEffect(() => {
         // Dynamically load the workers as a module
-        const worker = new Worker(new URL("./workers/worker.ts", import.meta.url));
+        const worker = new Worker(new URL("../workers/worker.ts", import.meta.url));
 
         // Listen for messages from the workers
         worker.onmessage = (event: MessageEvent): void => {

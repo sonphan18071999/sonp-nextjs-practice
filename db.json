@@ -1,0 +1,94 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 20,
+      "email": "john.doe@example.com",
+      "major": "Computer Science",
+      "gpa": 3.8,
+      "enrollmentYear": 2022
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "age": 22,
+      "email": "jane.smith@example.com",
+      "major": "Mathematics",
+      "gpa": 3.6,
+      "enrollmentYear": 2021
+    },
+    {
+      "id": 3,
+      "name": "Michael Johnson",
+      "age": 21,
+      "email": "michael.johnson@example.com",
+      "major": "Physics",
+      "gpa": 3.9,
+      "enrollmentYear": 2021
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "age": 19,
+      "email": "emily.davis@example.com",
+      "major": "Biology",
+      "gpa": 3.7,
+      "enrollmentYear": 2023
+    },
+    {
+      "id": 5,
+      "name": "Daniel Brown",
+      "age": 23,
+      "email": "daniel.brown@example.com",
+      "major": "Chemistry",
+      "gpa": 3.5,
+      "enrollmentYear": 2020
+    },
+    {
+      "id": 6,
+      "name": "Sophia Wilson",
+      "age": 20,
+      "email": "sophia.wilson@example.com",
+      "major": "English Literature",
+      "gpa": 3.4,
+      "enrollmentYear": 2022
+    },
+    {
+      "id": 7,
+      "name": "William Martinez",
+      "age": 22,
+      "email": "william.martinez@example.com",
+      "major": "History",
+      "gpa": 3.2,
+      "enrollmentYear": 2021
+    },
+    {
+      "id": 8,
+      "name": "Olivia Garcia",
+      "age": 21,
+      "email": "olivia.garcia@example.com",
+      "major": "Art",
+      "gpa": 3.6,
+      "enrollmentYear": 2021
+    },
+    {
+      "id": 9,
+      "name": "Ethan White",
+      "age": 20,
+      "email": "ethan.white@example.com",
+      "major": "Engineering",
+      "gpa": 3.3,
+      "enrollmentYear": 2022
+    },
+    {
+      "id": 10,
+      "name": "Ava Thompson",
+      "age": 19,
+      "email": "ava.thompson@example.com",
+      "major": "Psychology",
+      "gpa": 3.8,
+      "enrollmentYear": 2023
+    }
+  ]
+}

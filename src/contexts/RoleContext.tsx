@@ -1,5 +1,5 @@
 "use client"
-import {Roles} from "@/app/models/permission";
+import {Roles} from "@/models/permission";
 import {createContext, ReactNode, useContext, useState} from "react";
 
 interface RoleContextProps {

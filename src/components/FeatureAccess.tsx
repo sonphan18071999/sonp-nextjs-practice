@@ -1,8 +1,8 @@
 "use client"
 import React, { ReactNode } from "react";
-import {Features} from "@/app/models/permission";
-import {useRole} from "@/app/contexts/RoleContext";
-import {hasAccessToFeature} from "@/app/ultilies/permissionUtils";
+import {Features} from "@/models/permission";
+import {useRole} from "@/contexts/RoleContext";
+import {hasAccessToFeature} from "@/ultilies/permissionUtils";
 
 
 interface FeatureAccessProps {

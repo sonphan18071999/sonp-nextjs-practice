@@ -1,4 +1,4 @@
-import {Features, RoleFeatures, Roles} from "@/app/models/permission";
+import {Features, RoleFeatures, Roles} from "@/models/permission";
 
 export const hasAccessToFeature = (role: Roles, feature: Features): boolean => {
     return RoleFeatures[role]?.includes(feature) ?? false;
