@@ -90,5 +90,42 @@
       "gpa": 3.8,
       "enrollmentYear": 2023
     }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "title": "React for Beginners",
+      "instructor": "John Doe",
+      "duration": "5h 30m",
+      "category": "Frontend"
+    },
+    {
+      "id": "2",
+      "title": "Mastering TypeScript",
+      "instructor": "Jane Smith",
+      "duration": "8h 15m",
+      "category": "Programming"
+    },
+    {
+      "id": 3,
+      "title": "Introduction to Angular",
+      "instructor": "Bob Johnson",
+      "duration": "6h 45m",
+      "category": "Frontend"
+    },
+    {
+      "id": 4,
+      "title": "Advanced Vue.js Techniques",
+      "instructor": "Alice Brown",
+      "duration": "7h 20m",
+      "category": "Frontend"
+    },
+    {
+      "id": 5,
+      "title": "Node.js Fundamentals",
+      "instructor": "Chris Wilson",
+      "duration": "10h",
+      "category": "Backend"
+    }
   ]
 }
