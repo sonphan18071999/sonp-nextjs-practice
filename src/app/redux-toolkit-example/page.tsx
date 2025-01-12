@@ -1,20 +1,20 @@
 "use client";
-import {Box, Button, Table} from "@mui/material";
+import {Box, Button} from "@mui/material";
 import React, {useEffect} from "react";
-import {Provider, useDispatch, useSelector} from "react-redux";
-import {RootState, store} from "@/state/store";
+import {useDispatch, useSelector} from "react-redux";
+import {RootState} from "@/state/store";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import {fetchCourses, fetchStudents, selectStudent} from "@/state/appSlice";
 import DataTable from "@/components/table-component";
 import {Student} from "@/models/student";
 import {selectCourses, selectSelectedItem} from "@/state/selectors";
 import ReusableTable from "@/components/common/reusable-table-component";
+import {Course} from "@/models/course";
 
 const ReduxToolkitExamplePage = () => {
     const dispatch = useDispatch();
     const selectedItem = useSelector(selectSelectedItem);
     const courses:Course[] = useSelector(selectCourses);
-
 
     const {students, selectedStudent, status, error} = useSelector((state: RootState) => state.data);
     useEffect(() => {
